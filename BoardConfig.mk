@@ -164,11 +164,15 @@ USE_SENSOR_MULTI_HAL := true
 ifeq ($(HOST_OS),linux)
   # Only enable on user builds
   # It's annoying to have to flash the whole rom to test things etc.
-  ifeq ($(filter-out user,$(TARGET_BUILD_VARIANT)),)
+  ifeq ($(TARGET_BUILD_VARIANT),user)
     ifeq ($(WITH_DEXPREOPT),)
+    	$(info Dexpreopt is enabled)
       WITH_DEXPREOPT := true
-   endif
-  endif
+    endif
+  else
+  	$(info Dexpreopt is disabled)
+  	WITH_DEXPREOPT := false
+  endif # TARGET_BUILD_VARIANT = user
 endif
 
 # Wifi
