@@ -427,4 +427,8 @@
 
     <!-- Whether notify fingerprint client of successful cancelled authentication -->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
+
+    <!-- True if the device supports system navigation keys. -->
+    <bool name="config_supportSystemNavigationKeys">false</bool>
+
 </resources>
