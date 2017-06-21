@@ -137,6 +137,16 @@ on enable-low-power
     setprop ro.min_freq_4 384000
     start perfd
 
+    start haloplugd
+
+service haloplugd /system/bin/sh /system/bin/haloplugd
+    user root
+    group root
+    seclabel u:r:haloplugd:s0
+    oneshot
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
 service charger /charger
     class charger
     group log
