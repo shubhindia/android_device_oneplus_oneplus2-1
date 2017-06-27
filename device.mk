@@ -99,6 +99,11 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+
+# TweakPanel
+PRODUCT_PACKAGES += \
+	TweakPanel
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8994 \
