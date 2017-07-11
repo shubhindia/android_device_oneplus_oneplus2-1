@@ -56,8 +56,8 @@ while :; do
   elif [ $sleeping == 1 ]; then
     sleeping=0
   fi
-  curload=$(($(</sys/devices/system/cpu/cpu0/rq-stats/cpu_normalized_load)/2))
-  if [ $curload -ge 65 ]; then
+  curload=$(</sys/devices/system/cpu/cpu0/rq-stats/cpu_normalized_load)
+  if [ $curload -ge 130 ]; then
     write_cpu 3 1
   else
     write_cpu 3 0
@@ -67,12 +67,12 @@ while :; do
   else
     write_cpu 7 0
   fi
-  if [ $curload -ge 400 ]; then
+  if [ $curload -ge 370 ]; then
     write_cpu 5 1
   else
     write_cpu 5 0
   fi
-  if [ $curload -ge 580 ]; then
+  if [ $curload -ge 385 ]; then
     write_cpu 6 1
   else
     write_cpu 6 0
