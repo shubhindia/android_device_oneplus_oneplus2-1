@@ -5,9 +5,9 @@
     "branch": "n-mr2"
   },
   {
-    "repository": "halogenOS/android_vendor_oneplus_oneplus2",
+    "repository": "kunalshah912/android_vendor_oneplus_oneplus2",
     "target_path": "vendor/oneplus/oneplus2",
-    "branch": "XOS-7.1"
+    "branch": "n-mr2"
   },
   {
     "repository": "Cosmic-Devices/android_kernel_oneplus_msm8994",
