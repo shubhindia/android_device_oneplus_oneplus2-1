@@ -19,6 +19,11 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<integer name="config_buttonBrightnessSettingDefault">1</integer> 
+
+<integer name="config_deviceHardwareKeys">83</integer>
+
+
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 

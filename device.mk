@@ -337,3 +337,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
+
+# Device off percentage
+PRODUCT_PACKAGES += \
+  charger_res_images
