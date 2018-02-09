@@ -289,7 +289,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
     rild_socket
-    
 
 # Sensors
 PRODUCT_PACKAGES += \
