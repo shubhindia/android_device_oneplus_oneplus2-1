@@ -118,6 +118,10 @@ ENABLE_CPUSETS := true
 # Dependencies
 ALLOW_MISSING_DEPENDENCIES := true
 
+# CNE and DPM
+TARGET_LDPRELOAD := libNimsWrap.so
+BOARD_USES_QCNE := true
+
 # Filesystem
 TARGET_FS_CONFIG := $(PLATFORM_PATH)/config.fs
 
